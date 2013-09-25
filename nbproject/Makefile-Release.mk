@@ -35,6 +35,11 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
+	${OBJECTDIR}/CockTail.o \
+	${OBJECTDIR}/ICockTail.o \
+	${OBJECTDIR}/ICockTailDecorator.o \
+	${OBJECTDIR}/IDrink.o \
+	${OBJECTDIR}/IceDecorator.o \
 	${OBJECTDIR}/main.o
 
 
@@ -61,6 +66,31 @@ LDLIBSOPTIONS=
 ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/infdev01-5.exe: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/infdev01-5 ${OBJECTFILES} ${LDLIBSOPTIONS}
+
+${OBJECTDIR}/CockTail.o: CockTail.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} $@.d
+	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/CockTail.o CockTail.cpp
+
+${OBJECTDIR}/ICockTail.o: ICockTail.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} $@.d
+	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/ICockTail.o ICockTail.cpp
+
+${OBJECTDIR}/ICockTailDecorator.o: ICockTailDecorator.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} $@.d
+	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/ICockTailDecorator.o ICockTailDecorator.cpp
+
+${OBJECTDIR}/IDrink.o: IDrink.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} $@.d
+	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/IDrink.o IDrink.cpp
+
+${OBJECTDIR}/IceDecorator.o: IceDecorator.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} $@.d
+	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/IceDecorator.o IceDecorator.cpp
 
 ${OBJECTDIR}/main.o: main.cpp 
 	${MKDIR} -p ${OBJECTDIR}
