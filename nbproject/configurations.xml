@@ -1,9 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<configurationDescriptor version="89">
+<configurationDescriptor version="90">
   <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
+      <logicalFolder name="f1" displayName="interfaces" projectFiles="true">
+        <itemPath>CockTailPart.h</itemPath>
+        <itemPath>IAbstractFactory.h</itemPath>
+        <itemPath>IAlcohol.h</itemPath>
+        <itemPath>ICockTail.h</itemPath>
+        <itemPath>ICockTailDecorator.h</itemPath>
+        <itemPath>IDrink.h</itemPath>
+        <itemPath>IFactory.h</itemPath>
+        <itemPath>IGlass.h</itemPath>
+        <itemPath>ISoda.h</itemPath>
+      </logicalFolder>
+      <itemPath>CockTail.h</itemPath>
+      <itemPath>Factory.h</itemPath>
+      <itemPath>IceDecorator.h</itemPath>
+      <itemPath>Ingredient.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
@@ -12,16 +27,20 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
+      <logicalFolder name="f1" displayName="interfaces" projectFiles="true">
+        <itemPath>CockTailPart.cpp</itemPath>
+      </logicalFolder>
       <itemPath>CockTail.cpp</itemPath>
-      <itemPath>CockTail.h</itemPath>
-      <itemPath>ICockTail.cpp</itemPath>
-      <itemPath>ICockTail.h</itemPath>
-      <itemPath>ICockTailDecorator.cpp</itemPath>
-      <itemPath>ICockTailDecorator.h</itemPath>
+      <itemPath>DoubleWrapper.cpp</itemPath>
+      <itemPath>DoubleWrapper.h</itemPath>
+      <itemPath>Factory.cpp</itemPath>
+      <itemPath>IAlcohol.cpp</itemPath>
       <itemPath>IDrink.cpp</itemPath>
-      <itemPath>IDrink.h</itemPath>
+      <itemPath>IGlass.cpp</itemPath>
+      <itemPath>ISoda.cpp</itemPath>
       <itemPath>IceDecorator.cpp</itemPath>
-      <itemPath>IceDecorator.h</itemPath>
+      <itemPath>StringWrapper.cpp</itemPath>
+      <itemPath>StringWrapper.h</itemPath>
       <itemPath>main.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
@@ -50,11 +69,25 @@
       </item>
       <item path="CockTail.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="ICockTail.cpp" ex="false" tool="1" flavor2="0">
+      <item path="CockTailPart.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CockTailPart.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="DoubleWrapper.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="DoubleWrapper.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Factory.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Factory.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="IAbstractFactory.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="IAlcohol.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="IAlcohol.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="ICockTail.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="ICockTailDecorator.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="ICockTailDecorator.h" ex="false" tool="3" flavor2="0">
       </item>
@@ -62,9 +95,25 @@
       </item>
       <item path="IDrink.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="IFactory.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="IGlass.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="IGlass.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ISoda.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="ISoda.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="IceDecorator.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="IceDecorator.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Ingredient.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="StringWrapper.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="StringWrapper.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -93,11 +142,25 @@
       </item>
       <item path="CockTail.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="ICockTail.cpp" ex="false" tool="1" flavor2="0">
+      <item path="CockTailPart.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CockTailPart.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="DoubleWrapper.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="DoubleWrapper.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Factory.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Factory.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="IAbstractFactory.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="IAlcohol.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="IAlcohol.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="ICockTail.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="ICockTailDecorator.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="ICockTailDecorator.h" ex="false" tool="3" flavor2="0">
       </item>
@@ -105,9 +168,25 @@
       </item>
       <item path="IDrink.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="IFactory.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="IGlass.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="IGlass.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ISoda.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="ISoda.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="IceDecorator.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="IceDecorator.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Ingredient.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="StringWrapper.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="StringWrapper.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>

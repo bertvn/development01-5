@@ -36,10 +36,15 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 # Object Files
 OBJECTFILES= \
 	${OBJECTDIR}/CockTail.o \
-	${OBJECTDIR}/ICockTail.o \
-	${OBJECTDIR}/ICockTailDecorator.o \
+	${OBJECTDIR}/CockTailPart.o \
+	${OBJECTDIR}/DoubleWrapper.o \
+	${OBJECTDIR}/Factory.o \
+	${OBJECTDIR}/IAlcohol.o \
 	${OBJECTDIR}/IDrink.o \
+	${OBJECTDIR}/IGlass.o \
+	${OBJECTDIR}/ISoda.o \
 	${OBJECTDIR}/IceDecorator.o \
+	${OBJECTDIR}/StringWrapper.o \
 	${OBJECTDIR}/main.o
 
 
@@ -72,25 +77,50 @@ ${OBJECTDIR}/CockTail.o: CockTail.cpp
 	${RM} $@.d
 	$(COMPILE.cc) -g -MMD -MP -MF $@.d -o ${OBJECTDIR}/CockTail.o CockTail.cpp
 
-${OBJECTDIR}/ICockTail.o: ICockTail.cpp 
+${OBJECTDIR}/CockTailPart.o: CockTailPart.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} $@.d
-	$(COMPILE.cc) -g -MMD -MP -MF $@.d -o ${OBJECTDIR}/ICockTail.o ICockTail.cpp
+	$(COMPILE.cc) -g -MMD -MP -MF $@.d -o ${OBJECTDIR}/CockTailPart.o CockTailPart.cpp
 
-${OBJECTDIR}/ICockTailDecorator.o: ICockTailDecorator.cpp 
+${OBJECTDIR}/DoubleWrapper.o: DoubleWrapper.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} $@.d
-	$(COMPILE.cc) -g -MMD -MP -MF $@.d -o ${OBJECTDIR}/ICockTailDecorator.o ICockTailDecorator.cpp
+	$(COMPILE.cc) -g -MMD -MP -MF $@.d -o ${OBJECTDIR}/DoubleWrapper.o DoubleWrapper.cpp
+
+${OBJECTDIR}/Factory.o: Factory.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} $@.d
+	$(COMPILE.cc) -g -MMD -MP -MF $@.d -o ${OBJECTDIR}/Factory.o Factory.cpp
+
+${OBJECTDIR}/IAlcohol.o: IAlcohol.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} $@.d
+	$(COMPILE.cc) -g -MMD -MP -MF $@.d -o ${OBJECTDIR}/IAlcohol.o IAlcohol.cpp
 
 ${OBJECTDIR}/IDrink.o: IDrink.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} $@.d
 	$(COMPILE.cc) -g -MMD -MP -MF $@.d -o ${OBJECTDIR}/IDrink.o IDrink.cpp
 
+${OBJECTDIR}/IGlass.o: IGlass.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} $@.d
+	$(COMPILE.cc) -g -MMD -MP -MF $@.d -o ${OBJECTDIR}/IGlass.o IGlass.cpp
+
+${OBJECTDIR}/ISoda.o: ISoda.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} $@.d
+	$(COMPILE.cc) -g -MMD -MP -MF $@.d -o ${OBJECTDIR}/ISoda.o ISoda.cpp
+
 ${OBJECTDIR}/IceDecorator.o: IceDecorator.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} $@.d
 	$(COMPILE.cc) -g -MMD -MP -MF $@.d -o ${OBJECTDIR}/IceDecorator.o IceDecorator.cpp
+
+${OBJECTDIR}/StringWrapper.o: StringWrapper.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} $@.d
+	$(COMPILE.cc) -g -MMD -MP -MF $@.d -o ${OBJECTDIR}/StringWrapper.o StringWrapper.cpp
 
 ${OBJECTDIR}/main.o: main.cpp 
 	${MKDIR} -p ${OBJECTDIR}
